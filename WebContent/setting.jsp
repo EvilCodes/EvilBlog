@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -138,10 +138,11 @@
 						href="/settings/basic"><div class="setting-icon">
 								<i class="iconfont ic-settings-basic"></i>
 							</div> <span>基础设置</span> <!----></a></li>
-					<li class=""><a href="/settings/profile"><div
-								class="setting-icon">
+					<li class=""><a href="/settings/profile">
+							<div class="setting-icon">
 								<i class="iconfont ic-settings-profile"></i>
-							</div> <span>个人资料</span> <!----></a></li>
+							</div> <span>个人资料</span> <!---->
+					</a></li>
 					<li class=""><a href="/settings/weibo-auth"><div
 								class="setting-icon">
 								<i class="iconfont ic-settings-verify"></i>
@@ -267,19 +268,18 @@
 		src="//cdn2.jianshu.io/assets/web/pages/settings/index/entry-df7bbdc54f38eae49006.js"
 		crossorigin="anonymous"></script>
 	<script>
-  (function(){
-      var bp = document.createElement('script');
-      var curProtocol = window.location.protocol.split(':')[0];
-      if (curProtocol === 'https') {
-          bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
-      }
-      else {
-          bp.src = 'http://push.zhanzhang.baidu.com/push.js';
-      }
-      var s = document.getElementsByTagName("script")[0];
-      s.parentNode.insertBefore(bp, s);
-  })();
-</script>
+		(function() {
+			var bp = document.createElement('script');
+			var curProtocol = window.location.protocol.split(':')[0];
+			if (curProtocol === 'https') {
+				bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';
+			} else {
+				bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+			}
+			var s = document.getElementsByTagName("script")[0];
+			s.parentNode.insertBefore(bp, s);
+		})();
+	</script>
 
 
 
