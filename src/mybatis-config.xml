@@ -29,6 +29,7 @@
 	
 	<mappers>
 		<mapper resource="org/evilcode/data/TestMapper.xml" />
-		
+		<mapper class="org.evilcode.mapper.ClassMapper"/>
+		<mapper class="org.evilcode.mapper.CourseMapper"/>
 	</mappers>
 </configuration>

@@ -2,17 +2,15 @@ package org.evilcode.model.pojo;
 
 import java.util.List;
 
-public class User {
+public class UserInfo {
 	private int id;
 	private String username;
 //	private String imgUrl;
 	private String email;
-	
-
 	private String pwd;
 	private List<Course> list;
 
-	public User() {
+	public UserInfo() {
 
 	}
 
@@ -63,10 +61,10 @@ public class User {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", email=" + email + ", pwd=" + pwd + ", list=" + list
+		return "User [id=" + id + ", username=" + username + ",  email=" + email + ", pwd=" + pwd
 				+ "]";
 	}
 
