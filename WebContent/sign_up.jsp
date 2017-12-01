@@ -2,11 +2,7 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-<!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
-<!--[if IE 7]><html class="ie lt-ie8"><![endif]-->
-<!--[if IE 8]><html class="ie ie8"><![endif]-->
-<!--[if IE 9]><html class="ie ie9"><![endif]-->
-<!--[if !IE]><!--> <!--<![endif]-->
+
 
 <head>
   <meta charset="utf-8">
