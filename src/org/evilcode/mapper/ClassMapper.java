@@ -1,3 +1,4 @@
+
 package org.evilcode.mapper;
 
 import org.apache.ibatis.annotations.Result;
