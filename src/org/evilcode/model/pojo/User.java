@@ -10,19 +10,19 @@ public class User {
 	
 
 	private String pwd;
-	private List<Course> list;
+//	private List<Course> list;
 
 	public User() {
 
 	}
 
-	public List<Course> getList() {
-		return list;
-	}
-
-	public void setList(List<Course> list) {
-		this.list = list;
-	}
+//	public List<Course> getList() {
+//		return list;
+//	}
+//
+//	public void setList(List<Course> list) {
+//		this.list = list;
+//	}
 
 	public int getId() {
 		return id;
@@ -66,8 +66,7 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", email=" + email + ", pwd=" + pwd + ", list=" + list
-				+ "]";
+		return "User [id=" + id + ", username=" + username + ", email=" + email + ", pwd=" + pwd  ;
 	}
 
 }

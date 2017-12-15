@@ -44,7 +44,7 @@
 			return 0 == a.indexOf(b)
 		},
 		sa = function(a) {
-			return a ? a.replace(/^[\s\xa0]+|[\s\xa0]+$/g, "") 
+			return a ? a.replace(/^[\s\xa0]+|[\s\xa0]+$/g, "")
 		},
 		ra = function() {
 			for (var a = O.navigator.userAgent + (M.cookie ? M.cookie : "") + (M.referrer ? M.referrer : ""), b = a.length, c = O.history.length; 0 < c;) a += c-- ^ b++;
