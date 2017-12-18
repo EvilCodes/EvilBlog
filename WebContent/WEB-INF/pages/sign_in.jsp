@@ -51,12 +51,12 @@
 <meta name="csrf-param" content="authenticity_token" />
 <meta name="csrf-token"
 	content="YXGrARnk9eCUhu6Q0hJyGOiKHMxeJkUdrNie+Dc8cPTJzTKpyv1t4Nx0Y2f6OPwWNJDF+FRQnbzUzZ0NFa/fVg==" />
+<!-- ./代表的是根目录 -->
+<link rel="stylesheet" media="all"
+	href="./css/web-217d166d73e7682f5e81.css" />
 
 <link rel="stylesheet" media="all"
-	href="css/web-217d166d73e7682f5e81.css" />
-
-<link rel="stylesheet" media="all"
-	href="css/entry-27463f2882f8ebd9e811.css" />
+	href="./css/entry-27463f2882f8ebd9e811.css" />
 
 <link
 	href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico"
@@ -115,7 +115,7 @@
 	<div class="sign">
 		<div class="logo">
 			<a href="/"><img
-				src="//cdn2.jianshu.io/assets/web/logo-58fd04f6f0de908401aa561cda6a0688.png"
+				src="./img/logo.png"
 				alt="Logo" /></a>
 		</div>
 		<div class="main">
@@ -198,10 +198,10 @@
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script type="application/json" data-name="page-data">{"user_signed_in":false,"locale":"zh-CN","os":"windows","read_mode":"day","read_font":"font2"}</script>
 
-	<script src="js/assets/web-base-154e1141eb6cf42dfc9f.js"
+	<script src="./js/web-base-154e1141eb6cf42dfc9f.js"
 		crossorigin="anonymous"></script>
-	<script src="js/web-46216b5f6f8c10b2bb3b.js" crossorigin="anonymous"></script>
-	<script src="js/entry-b4be5d857a18c1aee934.js" crossorigin="anonymous"></script>
+	<script src="./js/web-46216b5f6f8c10b2bb3b.js" crossorigin="anonymous"></script>
+	<script src="./js/entry-b4be5d857a18c1aee934.js" crossorigin="anonymous"></script>
 	<script>
 		(function() {
 			var bp = document.createElement('script');
