@@ -12,11 +12,11 @@
 	<context:component-scan base-package="org.evilcode.controller"></context:component-scan>
 	<mvc:annotation-driven/>
 	
-	<!-- <mvc:resources location="/" mapping="/logon.html"></mvc:resources> -->
-	<!-- <mvc:resources location="/js/" mapping="/pages/js/**"></mvc:resources>
-	<mvc:resources location="/css/" mapping="/pages/css/**"></mvc:resources>-->
-	 <mvc:resources location="/css/" mapping="/css/**"/>
-	<mvc:resources location="/js/" mapping="/js/**"/>
+	<!-- <mvc:resources location="/" mapping="/logon.html"></mvc:resources> 
+	 <mvc:resources location="/js/" mapping="/pages/js/**"></mvc:resources>-->
+	<mvc:resources location="/WEB-INF/pages/img/" mapping="/img/**"/>
+	 <mvc:resources location="/WEB-INF/pages/css/" mapping="/css/**"/>
+	<mvc:resources location="/WEB-INF/pages/js/" mapping="/js/**"/>
 	
 	
 	
