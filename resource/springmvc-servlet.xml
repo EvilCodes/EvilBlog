@@ -11,7 +11,12 @@
                         http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd">
 	<context:component-scan base-package="org.evilcode.controller"></context:component-scan>
 	<mvc:annotation-driven/>
-	<!-- <mvc:resources location="/resources/**" mapping="/resources"/> -->
+	
+	<!-- <mvc:resources location="/" mapping="/logon.html"></mvc:resources> -->
+	<!-- <mvc:resources location="/js/" mapping="/pages/js/**"></mvc:resources>
+	<mvc:resources location="/css/" mapping="/pages/css/**"></mvc:resources>-->
+	 <mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
 	
 	
 	
