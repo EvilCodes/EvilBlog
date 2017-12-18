@@ -1,9 +1,7 @@
 package org.evilcode.controller;
 
-import org.evilcode.model.dao.impl.UserMsgImpl;
 import org.evilcode.model.pojo.User;
 import org.evilcode.model.service.IUserInfo;
-import org.evilcode.model.service.impl.IUserInfoImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -21,7 +19,7 @@ public class HelloController {
 		model.addAttribute("pwd", user.getPwd());
 		model.addAttribute("email", user.getEmail());
 		model.addAttribute("id", user.getId());
-		return "hello";
+		return "sign_in";
 		
 		
 		
