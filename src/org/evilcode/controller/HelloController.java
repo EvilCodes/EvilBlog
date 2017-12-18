@@ -19,7 +19,7 @@ public class HelloController {
 		model.addAttribute("pwd", user.getPwd());
 		model.addAttribute("email", user.getEmail());
 		model.addAttribute("id", user.getId());
-		return "sign_in";
+		return "sign_up";
 		
 		
 		
