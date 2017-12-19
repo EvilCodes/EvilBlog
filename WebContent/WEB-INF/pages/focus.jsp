@@ -7,8 +7,8 @@
 		<meta charset="UTF-8">
 		<title></title>
 
-		<link rel="stylesheet" media="all" href="css/entry-411db55503f2371ff51f.css">
-		<link rel="stylesheet" media="all" href="css/web-096a5331e66d587e2ffe.css">
+		<link rel="stylesheet" media="all" href="./css/entry-411db55503f2371ff51f.css">
+		<link rel="stylesheet" media="all" href="./css/web-096a5331e66d587e2ffe.css">
 
 		<style>
 			@font-face {
@@ -17,11 +17,11 @@
 			}s
 		</style>
 
-		<script type="text/javascript" defer="" async="" src="js/uaest.js"></script>
-		<script src="js/push.js"></script>
-		<script src="js/hm.js"></script>
+		<script type="text/javascript" defer="" async="" src="./js/uaest.js"></script>
+		<script src="./js/push.js"></script>
+		<script src="./js/hm.js"></script>
 
-		<script async="" src="js/analytics.js"></script>
+		<script async="" src="./js/analytics.js"></script>
 
 		<script>
 			(function(i, s, o, g, r, a, m) {
@@ -660,11 +660,11 @@
 			}
 		</script>
 
-		<script src="//cdn2.jianshu.io/assets/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
-		<script src="//cdn2.jianshu.io/assets/web-base-ec19efaf219649988187.js" crossorigin="anonymous"></script>
-		<script src="//cdn2.jianshu.io/assets/web-9f463e1de7f57c911f0e.js" crossorigin="anonymous"></script>
+		<script src="./js/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
+		<script src="./js/web-base-d79e9b7e602fb32df34e.js" crossorigin="anonymous"></script>
+		<script src="./js/web-422095a7b90654d2281c.js" crossorigin="anonymous"></script>
 
-		<script src="//cdn2.jianshu.io/assets/web/pages/subscriptions/index/entry-dabeeb7396dff473aa12.js" crossorigin="anonymous"></script>
+		<script src="./js/entry-77fd4357a6f725f0d870.js"" crossorigin="anonymous"></script>
 		<script>
 			(function() {
 				var bp = document.createElement('script');

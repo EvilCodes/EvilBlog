@@ -7,13 +7,13 @@
 		<meta charset="UTF-8">
 		<title></title>
 		
-		<link rel="stylesheet" media="all" href="css/web-34001e4e53a4d3713bbe.css">
+		<link rel="stylesheet" media="all" href="./css/web-34001e4e53a4d3713bbe.css">
 		
-		<link rel="stylesheet" media="all" href="css/entry-4022a9cdb8df13d630ea.css">
-		<script src="js/hm.js"></script>
-		<script src="js/push.js"></script>
-		<script async="" src="js/analytics.js"></script>
-		<script type="text/javascript" defer="" async="" src="js/uaest.js"></script>
+		<link rel="stylesheet" media="all" href="./css/entry-4022a9cdb8df13d630ea.css">
+		<script src="./js/hm.js"></script>
+		<script src="./js/push.js"></script>
+		<script async="" src="./js/analytics.js"></script>
+		<script type="text/javascript" defer="" async="" src="./js/uaest.js"></script>
 		<script>
 			(function(i, s, o, g, r, a, m) {
 				i['GoogleAnalyticsObject'] = r;
@@ -371,11 +371,11 @@
 			}
 		</script>
 
-		<script src="//cdn2.jianshu.io/assets/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
-		<script src="//cdn2.jianshu.io/assets/web-base-4ed4f922087f35afce0d.js" crossorigin="anonymous"></script>
-		<script src="//cdn2.jianshu.io/assets/web-e4526c5005c3f248fe3a.js" crossorigin="anonymous"></script>
+		<script src="./js/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
+		<script src="./js/web-base-4ed4f922087f35afce0d.js" crossorigin="anonymous"></script>
+		<script src="./js/web-e4526c5005c3f248fe3a.js" crossorigin="anonymous"></script>
 
-		<script src="//cdn2.jianshu.io/assets/web/pages/users/show/entry-8b407974edc172eaf86c.js" crossorigin="anonymous"></script>
+		<script src="./js/entry-8b407974edc172eaf86c.js" crossorigin="anonymous"></script>
 		<script>
 			(function() {
 				var bp = document.createElement('script');
