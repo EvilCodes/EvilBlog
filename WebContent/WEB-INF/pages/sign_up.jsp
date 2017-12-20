@@ -84,7 +84,7 @@
 
 <h4 class="title">
   <div class="normal-title">
-    <a class="" href="/sign_in">登录</a>
+    <a class="" href="sign_in">登录</a>
     <b>·</b>
     <a id="js-sign-up-btn" class="active" href="/sign_up">注册</a>
   </div>

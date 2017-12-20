@@ -8,21 +8,24 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-public class HelloController {
+public class TestController {
 	
 	@Autowired
 	private IUserInfo iUserInfoImpl;
-	@RequestMapping("/hellojsp")
+	@RequestMapping("/sign_in")
 	public String jumpToHello(Model model){
 		User user = iUserInfoImpl.getUser(1);
 		model.addAttribute("name", user.getUsername());
 		model.addAttribute("pwd", user.getPwd());
 		model.addAttribute("email", user.getEmail());
 		model.addAttribute("id", user.getId());
-		return "focus";
+		return "sign_in";
+	}
+	
+	@RequestMapping("/sign_up")
+	public String jumptoSignUp(){
 		
-		
-		
+		return "sign_up";
 		
 	}
 
