@@ -122,7 +122,7 @@
 
 			<h4 class="title">
 				<div class="normal-title">
-					<a class="active" href="/sign_in">登录</a> <b>·</b> <a
+					<a class="active" href="sign_in">登录</a> <b>·</b> <a
 						id="js-sign-up-btn" class="" href="sign_up">注册</a>
 				</div>
 			</h4>
