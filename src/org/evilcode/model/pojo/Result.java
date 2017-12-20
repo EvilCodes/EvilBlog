@@ -1,7 +1,11 @@
 package org.evilcode.model.pojo;
 
 import java.util.List;
-
+/**
+ * 用于呈现服务器响应结果的实体类
+ * @author BlackFox
+ *
+ */
 public class Result {
 	
 	private int resultCode;
