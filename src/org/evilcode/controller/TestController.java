@@ -1,11 +1,22 @@
 package org.evilcode.controller;
 
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import org.evilcode.model.pojo.User;
 import org.evilcode.model.service.IUserInfo;
+import org.evilcode.util.ServiceStatusSetting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TestController {
@@ -23,10 +34,24 @@ public class TestController {
 	}
 	
 	@RequestMapping("/sign_up")
-	public String jumptoSignUp(){
-		
+	public String jumptoSignUp(HttpServletRequest request){
 		return "sign_up";
 		
+	}
+
+	@RequestMapping("/gt/register1")
+	public void getServiceStatus(@RequestParam("t") String date, HttpServletRequest request,HttpServletResponse response) {
+		ServiceStatusSetting serviceStatusSetting = new ServiceStatusSetting.InnerConfig()
+				.initData()
+				.setStatus(request)
+				.build();
+		String resStr = serviceStatusSetting.getResStr();
+		try {
+			PrintWriter writer = response.getWriter();
+			writer.println(resStr);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
 	}
 
 }
