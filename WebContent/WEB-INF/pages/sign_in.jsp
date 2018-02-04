@@ -137,7 +137,7 @@
 				</div>
 			</h4>
 			<div class="js-sign-in-container">
-				<form id="new_session" 	action="/sessions" accept-charset="UTF-8"
+				<form id="new_session" 	action="./login" accept-charset="UTF-8"
 					method="post">
 					<input name="utf8" type="hidden" value="✓"><input
 						type="hidden" name="authenticity_token"
@@ -247,6 +247,7 @@
 		var handler1 = function(captchaObj) {
 			$("#submit1").click(function(e) {
 				var result = captchaObj.getValidate();
+				
 				/*  console.log("result="+result.toString()); */
 				if (!result) {
 					$("#notice1").show();
@@ -259,8 +260,8 @@
 			// 将验证码加到id为captcha的元素里，同时会有三个input的值用于表单提交
 			captchaObj.appendTo("#geetest-area");
 			captchaObj.onReady(function() {
-				$("#wait1").hide();
 				console.log("验证码加载完成");
+				$("#wait1").hide();
 			});
 			// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
 		};
@@ -281,6 +282,7 @@
 					width : "100%"
 				// 更多配置参数请参见：http://www.geetest.com/install/sections/idx-client-sdk.html#config
 				}, handler1);
+				console.dir(data);
 			}
 		});
 	</script>

@@ -6,4 +6,6 @@ encoding//WebContent/WEB-INF/pages/sign_in.jsp=UTF-8
 encoding//resource/jdbc.properties=UTF-8
 encoding//resource/log4j.properties=UTF-8
 encoding//src/org/evilcode/util/GeetestLib.java=UTF-8
+encoding//src/org/evilcode/util/HttpClientUtil.java=UTF-8
+encoding//src/org/evilcode/util/SysConfig.java=UTF-8
 encoding/<project>=GBK
