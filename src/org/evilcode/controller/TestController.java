@@ -12,17 +12,15 @@ import org.evilcode.util.ServiceStatusSetting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 public class TestController {
 	
 	@Autowired
 	private IUserInfo iUserInfoImpl;
+	
 	@RequestMapping("/sign_in")
 	public String jumpToHello(Model model){
 		User user = iUserInfoImpl.getUser(1);
@@ -42,7 +40,7 @@ public class TestController {
 	@RequestMapping("/gt/register1")
 	public void getServiceStatus(@RequestParam("t") String date, HttpServletRequest request,HttpServletResponse response) {
 		ServiceStatusSetting serviceStatusSetting = new ServiceStatusSetting.InnerConfig()
-				.initData()
+				.initData() 
 				.setStatus(request)
 				.build();
 		String resStr = serviceStatusSetting.getResStr();
@@ -52,6 +50,13 @@ public class TestController {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+	
+	@RequestMapping("/sendMsg")
+	public void sendMsg(String msg_num){
+		
+		System.out.println("收到请求,手机号码是:"+msg_num);
+		
 	}
 
 }
