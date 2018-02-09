@@ -6,7 +6,7 @@ public class UserInfo {
 	private int id;
 	private String username;
 //	private String imgUrl;
-	private String email;
+	private String phoneNum;
 	private String pwd;
 	private List<Course> list;
 
@@ -47,11 +47,11 @@ public class UserInfo {
 //	}
 
 	public String getEmail() {
-		return email;
+		return phoneNum;
 	}
 
-	public void setEmail(String email) {
-		this.email = email;
+	public void setEmail(String phoneNum) {
+		this.phoneNum = phoneNum;
 	}
 
 	public String getPwd() {
@@ -64,7 +64,7 @@ public class UserInfo {
 
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ",  email=" + email + ", pwd=" + pwd
+		return "User [id=" + id + ", username=" + username + ",  phoneNum=" + phoneNum + ", pwd=" + pwd
 				+ "]";
 	}
 

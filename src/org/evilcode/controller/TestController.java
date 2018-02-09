@@ -23,11 +23,11 @@ public class TestController {
 	
 	@RequestMapping("/sign_in")
 	public String jumpToHello(Model model){
-		User user = iUserInfoImpl.getUser(1);
-		model.addAttribute("name", user.getUsername());
-		model.addAttribute("pwd", user.getPwd());
-		model.addAttribute("email", user.getEmail());
-		model.addAttribute("id", user.getId());
+//		User user = iUserInfoImpl.getUser(1);
+//		model.addAttribute("name", user.getUsername());
+//		model.addAttribute("pwd", user.getPwd());
+//		model.addAttribute("p honeNum", user.getPhoneNum());
+//		model.addAttribute("id", user.getId());
 		return "sign_in";
 	}
 	
@@ -38,6 +38,22 @@ public class TestController {
 	}
 
 	@RequestMapping("/gt/register1")
+	public void registerVerify(@RequestParam("t") String date, HttpServletRequest request,HttpServletResponse response) {
+		ServiceStatusSetting serviceStatusSetting = new ServiceStatusSetting.InnerConfig()
+				.initData() 
+				.setStatus(request)
+				.build();
+		String resStr = serviceStatusSetting.getResStr();
+		try {
+			PrintWriter writer = response.getWriter();
+			writer.println(resStr);
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	
+	@RequestMapping("/gt/register-click")
 	public void getServiceStatus(@RequestParam("t") String date, HttpServletRequest request,HttpServletResponse response) {
 		ServiceStatusSetting serviceStatusSetting = new ServiceStatusSetting.InnerConfig()
 				.initData() 
@@ -52,10 +68,23 @@ public class TestController {
 		}
 	}
 	
+	
+	
+	
 	@RequestMapping("/sendMsg")
 	public void sendMsg(String msg_num){
 		
 		System.out.println("收到请求,手机号码是:"+msg_num);
+		
+	}
+	
+	@RequestMapping("/register")
+	public void register(){
+		
+	}
+	
+	@RequestMapping("/login")
+	public void login(){
 		
 	}
 

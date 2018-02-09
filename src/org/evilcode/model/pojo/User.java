@@ -1,12 +1,26 @@
 package org.evilcode.model.pojo;
 
-import java.util.List;
-
 public class User {
 	private int id;
 	private String username;
-//	private String imgUrl;
-	private String email;
+	public String getImgUrl() {
+		return imgUrl;
+	}
+
+	public void setImgUrl(String imgUrl) {
+		this.imgUrl = imgUrl;
+	}
+
+	public String getPhoneNum() {
+		return phoneNum;
+	}
+
+	public void setPhoneNum(String phoneNum) {
+		this.phoneNum = phoneNum;
+	}
+
+	private String imgUrl;
+	private String phoneNum;
 	
 
 	private String pwd;
@@ -48,13 +62,7 @@ public class User {
 //		this.imgUrl = imgUrl;
 //	}
 
-	public String getEmail() {
-		return email;
-	}
 
-	public void setEmail(String email) {
-		this.email = email;
-	}
 
 	public String getPwd() {
 		return pwd;
@@ -63,10 +71,12 @@ public class User {
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
-	
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", email=" + email + ", pwd=" + pwd  ;
+		return "User [id=" + id + ", username=" + username + ", imgUrl=" + imgUrl + ", phoneNum=" + phoneNum + ", pwd="
+				+ pwd + "]";
 	}
+	
 
 }

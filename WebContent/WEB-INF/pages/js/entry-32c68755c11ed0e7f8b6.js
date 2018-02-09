@@ -2602,9 +2602,10 @@ webpackJsonp([17], {
 					product: "bind"
 				}
 			});
-			$(".js-send-code-button").click(function() {
-				e.geetest.verify()
-			}), e.$on("captchaSuccessed", function() {
+//			$(".js-send-code-button").click(function() {
+//				e.geetest.verify()
+//			}), 
+			e.$on("captchaSuccessed", function() {
 				var t = document.getElementById("user_mobile_number").value,
 					r = $("input[name=force_user_nonexist]").val(),
 					o = {

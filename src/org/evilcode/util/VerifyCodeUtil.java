@@ -44,7 +44,7 @@ public class VerifyCodeUtil {
 	public VerifyCodeUtil init(){
 		random=new Random();
 		sb=new StringBuffer();
-		return this;
+			return this;
 	}
 	
 	public String generateCode(){
