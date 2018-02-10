@@ -116,20 +116,19 @@ var handler = function (captchaObj) {
             type: 'POST',
             dataType: 'json',
             data: {
-                username: $('#username2').val(),
-                password: $('#password2').val(),
+                recognizenum: $('#user_mobile_number').val(),
                 geetest_challenge: result.geetest_challenge,
                 geetest_validate: result.geetest_validate,
                 geetest_seccode: result.geetest_seccode
             },
             success: function (data) {
-                if (data.status === 'success') {
+                if (data.resultCode === 808) {
                     setTimeout(function () {
-                        alert('登录成功');
+                        alert('号码格式不对请重新输入');
                     }, 1500);
-                } else if (data.status === 'fail') {
+                } else if (data.resultCode === 809) {
                     setTimeout(function () {
-                        alert('登录失败，请完成验证');
+                        alert('该号码已经注册请直接登录');
                         captchaObj.reset();
                     }, 1500);
                 }
@@ -190,28 +189,28 @@ $.ajax({
 				</div>
 			</h4>
 			<div class="js-sign-up-container">
-				<form class="new_user" id="new_user" action="/users/register"
+				<form class="new_user" id="new_user" action="users/register"
 					accept-charset="UTF-8" method="post">
 					<input name="utf8" type="hidden" value="&#x2713;" /><input
 						type="hidden" name="authenticity_token"
 						value="lAKXAT5Dk4FCz+eEfOPg3bNOqstDE8+4B3ladQTbEs48vg6p7VoLgQo9anNUyW7Tb1Rz/0llFxl/bFmAJki9bA==" />
 					<div class="input-prepend restyle">
 						<input placeholder="你的昵称" type="text" value=""
-							name="user[nickname]" id="user_nickname" /> <i
+							name="nickname" id="user_nickname" /> <i
 							class="iconfont ic-user"></i>
 					</div>
 					<div class="input-prepend restyle no-radius js-normal">
 						<input type="hidden" value="CN"
 							name="user[mobile_number_country_code]"
 							id="user_mobile_number_country_code" /> <input placeholder="手机号"
-							type="tel" name="user[mobile_number]" id="user_mobile_number" />
+							type="tel" name="phonenum" id="user_mobile_number" />
 						<i class="iconfont ic-phonenumber"></i>
 					</div>
 					<input type="hidden" name="oversea" id="oversea" value="false" />
 					<input type="hidden" name="force_user_nonexist"
 						id="force_user_nonexist" value="true" />
 					<div
-						class="input-prepend restyle no-radius security-up-code js-security-number hide">
+						class="input-prepend restyle no-radius security-up-code js-security-number ">
 						<input type="text" name="sms_code" id="sms_code"
 							placeholder="手机验证码" /> <i class="iconfont ic-verify"></i>
 
@@ -222,7 +221,7 @@ $.ajax({
 					</div>
 					<input type="hidden" name="security_number" id="security_number" />
 					<div class="input-prepend">
-						<input placeholder="设置密码" type="password" name="user[password]"
+						<input placeholder="设置密码" type="password" name="pwd"
 							id="user_password" /> <i class="iconfont ic-password"></i>
 					</div>
 					<input type="submit" name="commit" value="注册"
