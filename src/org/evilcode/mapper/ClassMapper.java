@@ -21,5 +21,8 @@ public interface ClassMapper {
 			})
 	User selectUser(int id);
 	
+	@Select("select * from t_user where phonenum=#{phoneNum}")
+	User findUserByPhoneNum(String phoneNum);
+	
 
 }
