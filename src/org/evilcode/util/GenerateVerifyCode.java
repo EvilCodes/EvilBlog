@@ -6,25 +6,25 @@ import java.util.Random;
  * @author BlackFox
  *
  */
-public class VerifyCodeUtil {
+public class GenerateVerifyCode {
 	
 	public static Random random;
 	public int codeLength;
 	public static String finalCode;
-	private  static VerifyCodeUtil instance;
+	private  static GenerateVerifyCode instance;
 	private StringBuffer sb;
 	
 	
-	private VerifyCodeUtil(){
+	private GenerateVerifyCode(){
 		
 	}
 	
-	public static VerifyCodeUtil getInstance(){
+	public static GenerateVerifyCode getInstance(){
 		
 		if (null==instance) {
-			synchronized (VerifyCodeUtil.class) {
+			synchronized (GenerateVerifyCode.class) {
 				if (null==instance) {
-					instance=new VerifyCodeUtil();
+					instance=new GenerateVerifyCode();
 				}
 			}
 		}
@@ -33,7 +33,7 @@ public class VerifyCodeUtil {
 	}
 	
 	
-	public VerifyCodeUtil setCodeNum(int codeLength) {
+	public GenerateVerifyCode setCodeNum(int codeLength) {
 		this.codeLength = codeLength;
 		return this;
 	}
@@ -41,7 +41,7 @@ public class VerifyCodeUtil {
 	/**
 	 * 初始化成员变量
 	 */
-	public VerifyCodeUtil init(){
+	public GenerateVerifyCode init(){
 		random=new Random();
 		sb=new StringBuffer();
 			return this;
