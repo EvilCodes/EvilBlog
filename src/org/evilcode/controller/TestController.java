@@ -117,18 +117,24 @@ public class TestController {
 	}
 
 	@RequestMapping("/users/register")
-	public void register(User user,String sms_code) {
+	public String register(User user,String sms_code) {
 		Map<Long, String> regCode = PubDataStore.getInstance().getRegCode();
 		Long phonenum = user.getPhonenum();
 		
 		System.out.println("user.sms_code="+regCode.get(phonenum)+",sms_code="+sms_code);
 		if (regCode.get(phonenum).equals(sms_code)) {
 			iUserInfoImpl.addUser(user);
-			regCode.remove(phonenum);
-			System.out.println("注册成功");
+			if (iUserInfoImpl.isPhoneExist(String.valueOf(phonenum))) {
+				regCode.remove(phonenum);
+				System.out.println("注册成功");
+				return "head";
+			}else {
+				return null;
+			}
 		}else{
 			System.out.println("验证码不正确请重新输入");
 			regCode.remove(phonenum);
+			return null;
 		}
 		
 

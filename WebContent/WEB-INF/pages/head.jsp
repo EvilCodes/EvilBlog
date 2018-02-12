@@ -7,11 +7,11 @@
 <meta charset="utf-8" />
 <title></title>
 
-<link rel="stylesheet" href="./css/web-096a5331e66d587e2ffe.css" />
-<link rel="stylesheet" href="./css/entry-ef2c41b5e38d0ac3902f.css" />
-<script src="./js/push.js"></script>
-<script src="./js/hm.js"></script>
-<script async="" src="./js/analytics.js"></script>
+<link rel="stylesheet" href="../css/web-096a5331e66d587e2ffe.css" />
+<link rel="stylesheet" href="../css/entry-ef2c41b5e38d0ac3902f.css" />
+<script src="../js/push.js"></script>
+<script src="../js/hm.js"></script>
+<script async="" src="../js/analytics.js"></script>
 
 <script>
 	(function(i, s, o, g, r, a, m) {

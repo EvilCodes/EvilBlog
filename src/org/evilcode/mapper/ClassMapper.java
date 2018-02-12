@@ -17,7 +17,6 @@ public interface ClassMapper {
 				@Result(property="username",column="username"),
 				@Result(property="email",column="email"),
 				@Result(property="pwd",column="pwd")
-//				@Result(property="list",column="id",many=@Many(select="org.evilcode.mapper.CourseMapper.getCourses")
 				
 			})
 	User selectUser(int id);
@@ -29,5 +28,5 @@ public interface ClassMapper {
 	@Insert("insert into t_user (nickname,phonenum,pwd) values (#{nickname},#{phonenum},#{pwd})")
 	void insertIntoMsg(User user);
 	
-
+	
 }
