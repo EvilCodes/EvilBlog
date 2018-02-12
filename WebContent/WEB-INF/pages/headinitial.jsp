@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
-
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -37,8 +36,8 @@
 		<meta name="csrf-param" content="authenticity_token">
 		<meta name="csrf-token" content="A2JadXBiNt1KyiYibJTVhHIRFo6hYAU9VRArRD63zTUgH5zK91QWg7tl1n2LIp2asXgH3O21O0+nOklulLS7AQ==">
 
-		<link rel="stylesheet" media="all" href="css/web-bd0e74f69439789d683b.css">
-		<link rel="stylesheet"  media="all" href="css/entry-ba1cb344060057304085.css" />
+		<link rel="stylesheet" media="all" href="../css/web-bd0e74f69439789d683b.css">
+		<link rel="stylesheet"  media="all" href="../css/entry-ba1cb344060057304085.css" />
 
 		<link href="//cdn2.jianshu.io/assets/favicons/favicon-e743bfb1821442341c3ab15bdbe804f7ad97676bd07a770ccc9483473aa76f06.ico" rel="shortcut icon" type="image/x-icon">
 		<link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57">
@@ -51,7 +50,7 @@
 		<!-- Start of 访问统计 -->
 		
 		<script src="https://zz.bdstatic.com/linksubmit/push.js""></script>
-		<script src="js/hm.js"></script>
+		<script src="../js/hm.js"></script>
 		<script>
 			var _hmt = _hmt || [];
 			(function() {
@@ -985,10 +984,10 @@
 			}
 		</script>
 
-		<script src="js/babel-polyfill-2bec152a537b07763933.js" crossorigin="anonymous"></script>
-		<script src="js/web-base-ed770420ca0c5f76c537.js" crossorigin="anonymous"></script>
-		<script src="js/web-856c8f1fd655561c9616.js" crossorigin="anonymous"></script>
-		<script src="js/entry-bfaaf9eafdddc46e794e.js" crossorigin="anonymous"></script>
+		<script src="../js/babel-polyfill-2bec152a537b07763933.js" crossorigin="anonymous"></script>
+		<script src="../js/web-base-ed770420ca0c5f76c537.js" crossorigin="anonymous"></script>
+		<script src="../js/web-856c8f1fd655561c9616.js" crossorigin="anonymous"></script>
+		<script src="../js/entry-bfaaf9eafdddc46e794e.js" crossorigin="anonymous"></script>
 		<script>
 			(function() {
 				var bp = document.createElement('script');
