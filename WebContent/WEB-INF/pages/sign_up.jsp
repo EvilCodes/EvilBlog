@@ -44,10 +44,10 @@
 	content="Pl5qcopxRpiWc4XGX2W5azMoGvrZoCzeYfxlDZgsYNKW4vPaWWjemN6BCDF3Tzdl7zLDztPW9H8Z6Wb4ur/PcA==" />
 
 <link rel="stylesheet" media="all"
-	href="./css/web-217d166d73e7682f5e81.css" />
+	href="../css/web-217d166d73e7682f5e81.css" />
 
 <link rel="stylesheet" media="all"
-	href="./css/entry-27463f2882f8ebd9e811.css" />
+	href="../css/entry-27463f2882f8ebd9e811.css" />
 
 <link
 	href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico"
@@ -72,8 +72,8 @@
 	sizes="152x152" />
 
 <!-- Start of 访问统计 -->
-<script type="text/javascript" src="./js/gt.js"></script>
-<script type="text/javascript" src="./js/jquery.min.js"></script>
+<script type="text/javascript" src="../js/gt.js"></script>
+<script type="text/javascript" src="../js/jquery.min.js"></script>
 <script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -135,6 +135,7 @@ var handler = function (captchaObj) {
             }
         });
     });
+    //弹出geetest验证框的相应事件
     $('#msg_btn').click(function () {
         captchaObj.verify();
     })
@@ -142,7 +143,7 @@ var handler = function (captchaObj) {
 };
 
 $.ajax({
-    url: "gt/register-click?t=" + (new Date()).getTime(), // 加随机数防止缓存
+    url: "./gt/register-click?t=" + (new Date()).getTime(), // 加随机数防止缓存
     type: "get",
     dataType: "json",
     success: function (data) {
@@ -178,7 +179,7 @@ $.ajax({
 
 	<div class="sign">
 		<div class="logo">
-			<a href="/"><img src="./img/logo.png" alt="Logo" /></a>
+			<a href="/"><img src="../img/logo.png" alt="Logo" /></a>
 		</div>
 		<div class="main">
 
@@ -189,7 +190,7 @@ $.ajax({
 				</div>
 			</h4>
 			<div class="js-sign-up-container">
-				<form class="new_user" id="new_user" action="users/register"
+				<form class="new_user" id="new_user" action="users/register.do"
 					accept-charset="UTF-8" method="post">
 					<input name="utf8" type="hidden" value="&#x2713;" /><input
 						type="hidden" name="authenticity_token"
@@ -265,10 +266,10 @@ $.ajax({
 			}
 		</script>
 
-	<script src="./js/web-base-154e1141eb6cf42dfc9f.js"
+	<script src="../js/web-base-154e1141eb6cf42dfc9f.js"
 		crossorigin="anonymous"></script>
-	<script src="./js/web-46216b5f6f8c10b2bb3b.js"></script>
-	<script src="./js/entry-32c68755c11ed0e7f8b6.js"
+	<script src="../js/web-46216b5f6f8c10b2bb3b.js"></script>
+	<script src="../js/entry-32c68755c11ed0e7f8b6.js"
 		crossorigin="anonymous"></script>
 
 	<script>
