@@ -28,5 +28,4 @@ public interface ClassMapper {
 	@Insert("insert into t_user (nickname,phonenum,pwd) values (#{nickname},#{phonenum},#{pwd})")
 	void insertIntoMsg(User user);
 	
-	
 }
