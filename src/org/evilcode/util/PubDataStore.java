@@ -10,7 +10,7 @@ import java.util.Map;
  *
  */
 public class PubDataStore {
-	private Map<String,String> regCode;
+	private Map<Long,String> regCode;
 	private static PubDataStore instance;
 	
 	
@@ -18,6 +18,14 @@ public class PubDataStore {
 		
 	}
 	
+	
+	
+	public Map<Long, String> getRegCode() {
+		return regCode;
+	}
+
+
+
 	public static PubDataStore getInstance(){
 		
 		if (null==instance) {
@@ -33,16 +41,18 @@ public class PubDataStore {
 		return instance;
 	}
 	
-	private void initData(){
+	public PubDataStore initData(){
 		regCode=new HashMap<>();
+		return this;
 	}
 	
-	private Map<String,String> getDataStore(){
+	public Map<Long,String> getDataStore(){
 		return regCode;
 	}
 	
-	private void addData(String phoneNum,String reNum){
+	public PubDataStore addData(Long phoneNum,String reNum){
 		regCode.put(phoneNum, reNum);
+		return this;
 		
 	}
 	
