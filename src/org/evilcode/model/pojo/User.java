@@ -2,65 +2,46 @@ package org.evilcode.model.pojo;
 
 public class User {
 	private int id;
-	private String username;
-	public String getImgUrl() {
-		return imgUrl;
-	}
-
-	public void setImgUrl(String imgUrl) {
-		this.imgUrl = imgUrl;
-	}
-
-	public String getPhoneNum() {
-		return phoneNum;
-	}
-
-	public void setPhoneNum(String phoneNum) {
-		this.phoneNum = phoneNum;
-	}
-
-	private String imgUrl;
-	private String phoneNum;
-	
-
+	private String nickname;
+	private Long phonenum;
 	private String pwd;
-//	private List<Course> list;
 
 	public User() {
-
 	}
-
-//	public List<Course> getList() {
-//		return list;
-//	}
-//
-//	public void setList(List<Course> list) {
-//		this.list = list;
-//	}
 
 	public int getId() {
 		return id;
 	}
 
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
 
-	public String getUsername() {
-		return username;
+
+
+	public String getNickname() {
+		return nickname;
 	}
 
-	public void setUsername(String username) {
-		this.username = username;
+
+
+	public void setNickname(String nickname) {
+		this.nickname = nickname;
 	}
 
-//	public String getImgUrl() {
-//		return imgUrl;
-//	}
-//
-//	public void setImgUrl(String imgUrl) {
-//		this.imgUrl = imgUrl;
-//	}
+
+
+	public Long getPhonenum() {
+		return phonenum;
+	}
+
+
+
+	public void setPhonenum(Long phonenum) {
+		this.phonenum = phonenum;
+	}
 
 
 
@@ -68,15 +49,19 @@ public class User {
 		return pwd;
 	}
 
+
+
 	public void setPwd(String pwd) {
 		this.pwd = pwd;
 	}
 
+
+
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", imgUrl=" + imgUrl + ", phoneNum=" + phoneNum + ", pwd="
-				+ pwd + "]";
+		return "User [id=" + id + ", nickname=" + nickname+ ", phonenum=" + phonenum + ", pwd=" + pwd + "]";
 	}
+
 	
 
 }
