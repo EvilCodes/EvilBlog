@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.evilcode.model.pojo.Result;
 import org.evilcode.model.pojo.User;
 import org.evilcode.model.service.IUserInfo;
-import org.evilcode.model.service.impl.IUserInfoImpl;
 import org.evilcode.util.GenerateVerifyCode;
 import org.evilcode.util.MsgSendUtil;
 import org.evilcode.util.PhoneFormatRec;
@@ -82,7 +81,9 @@ public class TestController {
 			if (PhoneFormatRec.isPhoneLegal(recognizenum)) {
 				if (!iUserInfoImpl.isPhoneExist(recognizenum)) {
 
+					System.out.println("sendMsg.recognizenum="+recognizenum);
 					String recCode = GenerateVerifyCode.getInstance().setCodeNum(6).init().generateCode();
+					System.out.println("sendMsg.recCode="+recCode);
 					PubDataStore.getInstance().initData().addData(Long.parseLong(recognizenum), recCode);
 					String sid = "5e553c396a860a076e941a1db9bed35c";
 					String token = "38a5a2aad28b88ea41c7e27937d7bcac";
@@ -122,7 +123,6 @@ public class TestController {
 		
 		System.out.println("user.sms_code="+regCode.get(phonenum)+",sms_code="+sms_code);
 		if (regCode.get(phonenum).equals(sms_code)) {
-			
 			iUserInfoImpl.addUser(user);
 			regCode.remove(phonenum);
 			System.out.println("×¢²á³É¹¦");
