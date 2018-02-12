@@ -10,13 +10,13 @@ public class PageHomeController {
 	@RequestMapping("/home.do")
 	private String goToHead(){
 		
-		return "head";
+		return "home";
 	}
 	
 	
 	@RequestMapping("/initial.do")
 	private String goToInitial(){
-		return "headinitial";
+		return "homeinitial";
 	}
 	
 
