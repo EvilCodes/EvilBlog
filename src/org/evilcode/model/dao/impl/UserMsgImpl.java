@@ -17,4 +17,15 @@ public class UserMsgImpl implements IUserMsg{
 		return classMapper.selectUser(id);
 	}
 
+	@Override
+	public User selectUserByPhoneNum(String phoneNum) {
+		User userDataByPhoneNum = classMapper.findUserByPhoneNum(phoneNum);
+		return userDataByPhoneNum;
+	}
+
+	@Override
+	public void addUser(User user) {
+		classMapper.insertIntoMsg(user);
+	}
+
 }
