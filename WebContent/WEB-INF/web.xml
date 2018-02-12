@@ -46,7 +46,10 @@ id="WebApp_ID" version="3.1">
   	<param-value>classpath:applicationContext.xml</param-value>
   
   </context-param>
-
+  <welcome-file-list>
+  	<welcome-file>head.jsp</welcome-file>
+  
+  </welcome-file-list>
 
 
 </web-app>
