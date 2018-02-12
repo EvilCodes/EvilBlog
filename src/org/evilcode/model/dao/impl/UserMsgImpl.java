@@ -12,10 +12,6 @@ public class UserMsgImpl implements IUserMsg{
 	@Autowired
 	ClassMapper classMapper;
 
-	@Override
-	public User getUser(int id) {
-		return classMapper.selectUser(id);
-	}
 
 	@Override
 	public User selectUserByPhoneNum(String phoneNum) {
@@ -26,6 +22,12 @@ public class UserMsgImpl implements IUserMsg{
 	@Override
 	public void addUser(User user) {
 		classMapper.insertIntoMsg(user);
+	}
+
+	@Override
+	public User getUser(String phoneNum) {
+		User originUser = classMapper.findUserByPhoneNum(phoneNum);
+		return originUser;
 	}
 
 }
