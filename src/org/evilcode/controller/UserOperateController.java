@@ -7,6 +7,7 @@ import java.util.Map;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.evilcode.model.dao.impl.UserMsgImpl;
 import org.evilcode.model.pojo.Result;
 import org.evilcode.model.pojo.User;
 import org.evilcode.model.service.IUserInfo;
@@ -14,10 +15,12 @@ import org.evilcode.util.GenerateVerifyCode;
 import org.evilcode.util.MsgSendUtil;
 import org.evilcode.util.PhoneFormatRec;
 import org.evilcode.util.PubDataStore;
+import org.evilcode.util.PublicMsgConstant;
 import org.evilcode.util.ServiceStatusSetting;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
@@ -28,7 +31,7 @@ public class UserOperateController {
 	@Autowired
 	private IUserInfo iUserInfoImpl;
 
-	@RequestMapping("/sign_in")
+	@RequestMapping("/users/sign_in")
 	public String jumpToHello(Model model) {
 		// User user = iUserInfoImpl.getUser(1);
 		// model.addAttribute("name", user.getUsername());
@@ -38,7 +41,7 @@ public class UserOperateController {
 		return "sign_in";
 	}
 
-	@RequestMapping("/sign_up")
+	@RequestMapping("/users/sign_up")
 	public String jumptoSignUp(HttpServletRequest request) {
 		return "sign_up";
 
@@ -116,7 +119,7 @@ public class UserOperateController {
 
 	}
 
-	@RequestMapping("/users/register")
+	@RequestMapping("/users/register.do")
 	public String register(User user,String sms_code) {
 		Map<Long, String> regCode = PubDataStore.getInstance().getRegCode();
 		Long phonenum = user.getPhonenum();
@@ -127,7 +130,7 @@ public class UserOperateController {
 			if (iUserInfoImpl.isPhoneExist(String.valueOf(phonenum))) {
 				regCode.remove(phonenum);
 				System.out.println("×¢²á³É¹¦");
-				return "head";
+				return "home";
 			}else {
 				return null;
 			}
@@ -140,8 +143,23 @@ public class UserOperateController {
 
 	}
 
-	@RequestMapping("/login")
-	public void login() {
+	@RequestMapping("users/login.do")
+	public String login(User user,String geetest_seccode,ModelMap modelMap) {
+		if (null!=geetest_seccode&&!geetest_seccode.equals("")) {
+			System.out.println("login.user="+user+",login.geetest_seccode="+geetest_seccode);
+			if (null!=user.getPhonenum()) {
+				Result loginResult = iUserInfoImpl.isLoginSuccess(user);
+				int loginResultCode = loginResult.getResultCode();
+				if (loginResultCode==PublicMsgConstant.LOGIN_STATUS_SUCCESS) {
+					return "home";
+					
+				}else {
+					System.out.println("loginResult="+loginResult.toString());
+					modelMap.addAttribute("loginResult", loginResult);
+				}
+			}
+		}
+		return "sign_in";
 
 	}
 
