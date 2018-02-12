@@ -52,7 +52,7 @@
 	content="CAAKrLaA24WoO+sIpi2GNDCR0kklxsfnFuwCizA8x9mqAXbqVETxG8X8yVXk1cFyUF3qtdrL0Jl7hPvjmorBiw==" />
 <!-- ./和什么都不加的效果是一样的 -->
 <link rel="stylesheet" media="all"
-	href="./css/web-8e4fd86a49b411611e61.css" />
+	href="../css/web-8e4fd86a49b411611e61.css" />
 <link rel="stylesheet" media="all"
 	href="css/entry-02758fb5ca6a7c57530e.css" />
 
@@ -203,15 +203,15 @@
 	<script type="application/json" data-name="page-data">{"user_signed_in":true,"locale":"zh-CN","os":"windows","read_mode":"day","read_font":"font2","current_user":{"id":2800016,"nickname":"Vampire丶黑狐","slug":"38d1d73cc871","avatar":"http://upload.jianshu.io/users/upload_avatars/2800016/0e8475d0-227d-4a7f-97e5-c828816f55da.png","unread_counts":{"chats":0,"total":0}}}</script>
 
 	<script
-		src="./js/babel-polyfill-e27dec85eeb94683dfc7.js"
+		src="../js/babel-polyfill-e27dec85eeb94683dfc7.js"
 		crossorigin="anonymous"></script>
-	<script src="./js/web-base-2a9e2334a0b989431b0e.js"
+	<script src="../js/web-base-2a9e2334a0b989431b0e.js"
 		crossorigin="anonymous"></script>
-	<script src="./js/web-f69a5c94aed85a41a895.js"
+	<script src="../js/web-f69a5c94aed85a41a895.js"
 		crossorigin="anonymous"></script>
 
 	<script
-		src="./js/entry-28ea60454ed24a7df92c.js"
+		src="../js/entry-28ea60454ed24a7df92c.js"
 		crossorigin="anonymous"></script>
 	<script>
 		(function() {
