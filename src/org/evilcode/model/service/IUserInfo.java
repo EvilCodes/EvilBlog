@@ -6,6 +6,8 @@ public interface IUserInfo {
 	
 	User getUser(int id);
 	
+	boolean isPhoneExist(String phoneNum);
 	
+	void addUser(User user);
 
 }
