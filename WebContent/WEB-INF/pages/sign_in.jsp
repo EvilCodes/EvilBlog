@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	
+	
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <!--[if IE 6]><html class="ie lt-ie8"><![endif]-->
@@ -48,12 +50,11 @@
 <meta name="csrf-param" content="authenticity_token">
 <meta name="csrf-token"
 	content="dLudMIFtkLCx+RYgKWL88D9TiW3a4XVOD7WXAf/icy6eCaMnxvu8HvNIYsfVU73EL+k6YxvETM20UutcXJSi5Q==">
+<link rel="stylesheet" media="all"
+	href="../css/web-8e4fd86a49b411611e61.css">
 
 <link rel="stylesheet" media="all"
-	href="./css/web-8e4fd86a49b411611e61.css">
-
-<link rel="stylesheet" media="all"
-	href="./css/entry-27463f2882f8ebd9e811.css">
+	href="../css/entry-27463f2882f8ebd9e811.css">
 
 <link
 	href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico"
@@ -78,10 +79,24 @@
 	sizes="152x152">
 
 <!-- Start of 访问统计 -->
-<script src="./js/push.js"></script>
-<script src="./js/hm.js"></script>
-<script async="" src="./js/analytics.js"></script>
-<script src="./js/gt.js"></script>
+<script src="../js/push.js"></script>
+<script src="../js/hm.js"></script>
+<script async="" src="../js/analytics.js"></script>
+<script src="../js/gt.js"></script>
+<script src="../js/jquery.min.js"></script>
+
+ <script>
+ 
+ $(document).ready(function(){
+	 var loginResult="${loginResult}";
+	 console.log("loginResult="+loginResult);
+	 if (null!=loginResult) {
+		 alert("${loginResult.resultDesc}");
+		
+	}
+ });
+ 
+ </script>
 <script>
 	(function(i, s, o, g, r, a, m) {
 		i['GoogleAnalyticsObject'] = r;
@@ -110,15 +125,17 @@
 </script>
 
 <!-- End of 访问统计 -->
-<script charset="UTF-8" async="" src="./js/fullpage.8.2.3.js"></script>
+<script charset="UTF-8" async="" src="../js/fullpage.8.2.3.js"></script>
 <!-- <script charset="UTF-8" async=""
 	src="https://api.geetest.com/gettype.php?gt=ec47641997d5292180681a247db3c92e&amp;callback=geetest_1513766954331"></script>
 <script charset="UTF-8"
 	src="https://api.geetest.com/get.php?gt=ec47641997d5292180681a247db3c92e&amp;challenge=402f87e28d5b42720c9e6f3fed619304&amp;w=CfRw2om8TPV(KWcC493N9mBFJip38IBtAVsu1VkasJX2VtdSIZHEBjmKZ432KGkXw0YECXQG4wjYGcuSKKDRrVWoW2N2I9GSq8)C9PPo6ylYVDmDOryDZElZbWJcRzxDPjlifilnhkIP3Qr6PQoovP5Sd6cunjq(vgWc7Xsu1n139gxYpBtHO1ZET4iq74NqOK(PzE4YIXPeIbrrPxvYd)C6By(agHeKeJ4BHW4kPvx4GIIiAmaMCIyiiEs0yKQmp7IcBNOUgiu0MzhHsFa3EYvxRg)d55RrRDQqzRTIX7aeoNIANUgP4gejhOBoHQ8sbUGaQvJJLcuC(p93(02j0Z)duXM1NDmnnPY)iD(S6C58szX4iPLLiarowqIyelotVfyzbWcocTLpJG)KWWNYjx4xcRq(rJSiHcSQ(obQngmvDdXF)iK(IN8ZhmE5fbte5ioH6QYlZ)3vGl(elmAnjhctLlakjDrPtDhz8lE39zaup2WhRO4Fei5sv5rXtI8yY2Xeeyoak5aYh8eII(8cPFGBEVNYksZuXBVr7Z5UG6fX7Cj4sELvqP8gH0IePvBQZlA0maOxcPdmn30FkSISRtQRssP)Ot0be2wZOBkrBmz)8hr25ivGWNbt4n2ZKEHHxDF9eMRSn4jXW6fzS5Qk89oRGSranBNlISghbQVgRMpiHPTTDOJpxwbWIQ(1Bt7)0KRNZsT6YqBeJE0cPcqznO80TzOMzCLgSqbno(Ldm0nH6q7UFxDPWTASrVQbRlTfvmiQGQnoLQfQb339E10Y77DU4QQOrTn8a01dvxRqNLmMIpcDuyq8gtLFMFBlpZZ(PyjAOSMNKfmIvv7inWarUjdOWyPNvfhjRZYR3J(IAKZ0m6oGPa77WkmL1xfRPGqFugSuwwqnJskRbvBcrVItO8KSZXLGdzRkPC5BclHcuCfAyxESuvYQrcweXU)SRUYOm1UKtArMBB48OQapLslfG(R50j2X2pVOUdRCHScTomn1Lus7StORjdOByl5NkdljH0q6Su2PZXmYBkGW8u(gH6dExivwnEa4DwaJwW06z44PTGXPK9(I)k8ChJj7r4T11DTl78vjMSH4z87TOltjB1k2rYjzau7LwU8j0gCnrIQ)pnIPIEipakhpCujYNffOfwjbbXFvPzut7vL19ndOBGt1Zh3xUN0Z5DzGXqokrkSgQ4oWmwxuIkILr1GfHnAl58x3NCoGIHRqsgO3BRseHIq9aiaNaXzDLoKx44P0SN90n7qWlmG9(B3xchcRnxIgFms60DNfSijxg2H8yJ5kJw4MS(aLyaiELNjVWeIzKKBTRuhI6EsKH2SUYJ28ELmczqspAePK0KHaL0c5dysWZQRMtuBqVPvraDi2lrSAwzxmX1dUFg9ZuIeqoyT1NbeDpGne0ImGEZ13JCqOoj724dn3(j8TRIK3TjOMTKnHfTeKiJDddjE(yMvJXByCrbiLx6XjSTUhn)07Pfrxyygo)1UteaXt0Esrmn9YPQucSi4yTu7crRmSVwG2TQ3SbsY(O(GY8BPcN1(G3l4npI0lPIID3rsnqmgpoT7ID3sR6Yk(MM(hff(qilG7np6HYUgqdmCzIkP52bsvIu1CHvnQwADzc5xKbgWpE)YIDY1gQbXyabQZmX42Bu6h8QlrPrzu0BE6EBKXwSsFzaZyteVhSIyhddd)wWEuoC)lECLVc7hfNKQw5WMxz8C6kVp(KHsjJxf(M(JcbxMBpLFUDcASZEvsGgFA2GvkkLoLCTz7ktMqVDkFLY12SKL8lzUzfFcKkCrEVn)xIZuwz0TcYQS3UjDSiWNiHmBY548nDJGwNU(522bNMn3ZrQ0JC6BRGqdD(BTO5DiKeFExnKUm1o34f6LykBHAadI7Axjh1h9CD2xf5w412vHJagSuts)xuoQMdxRjTRzufp5(p8jJBMOiLA..170302660a101a7eee3605b457c78d1646e92e43adf49ed7e2f30c22aac802f68e820032a8a47530e12b9257225405b7f0fd1a5e425faeffa83ffc4e8ad06d843664e272464a17be7f7ece479ab5ec9daf880e8288de4f224de1da997723e0abf02da111da1636e7d92c67520144d8c445bfc5b2e116978cd9f5cb922587e41c&amp;callback=geetest_1513766952774"></script>
  -->
+ 
 
 
-<link href="./css/style_https.1.4.7.css" rel="stylesheet">
+
+<link href="../css/style_https.1.4.7.css" rel="stylesheet">
 </head>
 
 <body class="no-padding reader-black-font" lang="zh-CN">
@@ -137,7 +154,7 @@
 				</div>
 			</h4>
 			<div class="js-sign-in-container">
-				<form id="new_session" 	action="./login" accept-charset="UTF-8"
+				<form id="new_session" 	action="./login.do" accept-charset="UTF-8"
 					method="post">
 					<input name="utf8" type="hidden" value="✓"><input
 						type="hidden" name="authenticity_token"
@@ -146,7 +163,7 @@
 					<!-- 正常登录登录名输入框 -->
 					<div class="input-prepend restyle js-normal">
 						<input placeholder="手机号或邮箱" type="text"
-							name="session[email_or_mobile_number]"
+							name="phonenum"
 							id="session_email_or_mobile_number"> <i
 							class="iconfont ic-user"></i>
 					</div>
@@ -154,7 +171,7 @@
 					<!-- 海外登录登录名输入框 -->
 
 					<div class="input-prepend">
-						<input placeholder="密码" type="password" name="session[password]"
+						<input placeholder="密码" type="password" name="pwd"
 							id="session_password"> <i class="iconfont ic-password"></i>
 					</div>
 					<input value="false" type="hidden" name="session[oversea]"
@@ -197,7 +214,7 @@
 									帐号登录</a></li>
 						</ul>
 					</div>
-					<input type="submit" id="submit1" name="commit" value="登录"
+					<input type="submit" id="submit5" name="commit" value="登录"
 						class="sign-in-button" data-disable-with="登录">
 				</form>
 				<!-- 更多登录方式 -->
@@ -237,16 +254,18 @@
 			}
 		</script>
 
-	<script src="./js/web-base-fcf22328f0e4b2793730.js"
+	<script src="../js/web-base-fcf22328f0e4b2793730.js"
 		crossorigin="anonymous"></script>
-	<script src="./js/web-51972960d5673fc267f1.js" crossorigin="anonymous"></script>
-	<script src="./js/entry-b4be5d857a18c1aee934.js"
+	<script src="../js/web-51972960d5673fc267f1.js" crossorigin="anonymous"></script>
+	<script src="../js/entry-b4be5d857a18c1aee934.js"
 		crossorigin="anonymous"></script>
-	<script type="text/javascript" src="./js/gt.js"></script>
+	<script type="text/javascript" src="../js/gt.js"></script>
 	<script>
+	// handler是有股geetest的提前设置不是相应
 		var handler1 = function(captchaObj) {
 			$("#submit1").click(function(e) {
 				var result = captchaObj.getValidate();
+				console.log("result="+result);
 				
 				/*  console.log("result="+result.toString()); */
 				if (!result) {
@@ -258,6 +277,7 @@
 				}
 			});
 			// 将验证码加到id为captcha的元素里，同时会有三个input的值用于表单提交
+			//提前进行相关功能的设置
 			captchaObj.appendTo("#geetest-area");
 			captchaObj.onReady(function() {
 				console.log("验证码加载完成");
@@ -266,7 +286,7 @@
 			// 更多接口参考：http://www.geetest.com/install/sections/idx-client-sdk.html
 		};
 		$.ajax({
-			url : "gt/register1?t=" + (new Date()).getTime(), // 加随机数防止缓存
+			url : "../gt/register1?t=" + (new Date()).getTime(), // 加随机数防止缓存
 			type : "get",
 			dataType : "json",
 			success : function(data) {
