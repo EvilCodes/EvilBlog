@@ -112,7 +112,7 @@ var handler = function (captchaObj) {
             return alert('请完成验证');
         }
         $.ajax({
-            url: 'gt/validate-click',
+            url: '../gt/validate-click',
             type: 'POST',
             dataType: 'json',
             data: {
@@ -143,7 +143,7 @@ var handler = function (captchaObj) {
 };
 
 $.ajax({
-    url: "./gt/register-click?t=" + (new Date()).getTime(), // 加随机数防止缓存
+    url: "../gt/register-click?t=" + (new Date()).getTime(), // 加随机数防止缓存
     type: "get",
     dataType: "json",
     success: function (data) {
@@ -190,7 +190,7 @@ $.ajax({
 				</div>
 			</h4>
 			<div class="js-sign-up-container">
-				<form class="new_user" id="new_user" action="users/register.do"
+				<form class="new_user" id="new_user" action="./register.do"
 					accept-charset="UTF-8" method="post">
 					<input name="utf8" type="hidden" value="&#x2713;" /><input
 						type="hidden" name="authenticity_token"
