@@ -41,9 +41,9 @@
 		<meta name="csrf-param" content="authenticity_token" />
 		<meta name="csrf-token" content="/JjstIlIDeG56pQvUPr1zbZfqzUCUnaKLAqbVpgNjewWWSjtNc5guLCWvW8sQ1Yn8t0gLqB4Gp5PxmsAeKnF3A==" />
 
-		<link rel="stylesheet" media="all" href="css/web-8e4fd86a49b411611e61.css" />
+		<link rel="stylesheet" media="all" href="../css/web-8e4fd86a49b411611e61.css" />
 
-		<link rel="stylesheet" media="all" href="css/entry-4022a9cdb8df13d630ea.css" />
+		<link rel="stylesheet" media="all" href="../css/entry-4022a9cdb8df13d630ea.css" />
 
 		<link href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico" rel="icon">
 		<link rel="apple-touch-icon-precomposed" href="//cdn2.jianshu.io/assets/apple-touch-icons/57-a6f1f1ee62ace44f6dc2f6a08575abd3c3b163288881c78dd8d75247682a4b27.png" sizes="57x57" />
@@ -612,11 +612,11 @@
 			}
 		</script>
 
-		<script src="js/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
-		<script src="js/web-base-2a9e2334a0b989431b0e.js" crossorigin="anonymous"></script>
-		<script src="js/web-f69a5c94aed85a41a895.js" crossorigin="anonymous"></script>
+		<script src="../js/babel-polyfill-e27dec85eeb94683dfc7.js" crossorigin="anonymous"></script>
+		<script src="../js/web-base-2a9e2334a0b989431b0e.js" crossorigin="anonymous"></script>
+		<script src="../js/web-f69a5c94aed85a41a895.js" crossorigin="anonymous"></script>
 
-		<script src="js/entry-47a0592d3fec107bb646.js" crossorigin="anonymous"></script>
+		<script src="../js/entry-47a0592d3fec107bb646.js" crossorigin="anonymous"></script>
 		<script>
 			(function() {
 				var bp = document.createElement('script');
