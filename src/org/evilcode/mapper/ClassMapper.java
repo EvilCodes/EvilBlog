@@ -1,6 +1,7 @@
 
 package org.evilcode.mapper;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Result;
 import org.apache.ibatis.annotations.Results;
 import org.apache.ibatis.annotations.Select;
@@ -23,6 +24,10 @@ public interface ClassMapper {
 	
 	@Select("select * from t_user where phonenum=#{phoneNum}")
 	User findUserByPhoneNum(String phoneNum);
+	
+	
+	@Insert("insert into t_user (nickname,phonenum,pwd) values (#{nickname},#{phonenum},#{pwd})")
+	void insertIntoMsg(User user);
 	
 
 }
