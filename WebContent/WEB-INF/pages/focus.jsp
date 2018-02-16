@@ -129,16 +129,16 @@
 					<div class="collapse navbar-collapse" id="menu">
 						<ul class="nav navbar-nav">
 							<li class="">
-								<a href="/">
+								<a href="home.do">
 									<span class="menu-text">发现</span><i class="iconfont ic-navigation-discover menu-icon"></i>
 								</a>
 							</li>
 							<li class="active">
-								<a href="/subscriptions">
+								<a href="focus.do">
 									<span class="menu-text">关注</span><i class="iconfont ic-navigation-follow menu-icon"></i>
 								</a>
 							</li>
-							<li class="notification"><a data-hover="dropdown" href="/notifications" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i> <!----> <!----></a>
+							<li class="notification"><a data-hover="dropdown" href="msg.do" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i> <!----> <!----></a>
 								<ul class="dropdown-menu">
 									<li><a href="/notifications#/comments"><i class="iconfont ic-comments"></i> <span>评论</span> <!----></a></li>
 									<li><a href="/notifications#/chats"><i class="iconfont ic-chats"></i> <span>简信</span> <!----></a></li>

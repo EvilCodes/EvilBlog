@@ -104,7 +104,7 @@
 		<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 			<div class="width-limit">
 				<!-- 左上方 Logo -->
-				<a class="logo" href="/"><img src="//cdn2.jianshu.io/assets/web/nav-logo-4c7bbafe27adc892f3046e6978459bac.png" alt="Nav logo"></a>
+				<a class="logo" href="/"><img src="../img/logo.png" alt="Nav logo"></a>
 
 				<!-- 右上角 -->
 				<!-- 登录显示写文章 -->
@@ -186,17 +186,17 @@
 					<div class="collapse navbar-collapse" id="menu">
 						<ul class="nav navbar-nav">
 							<li class="tab active">
-								<a href="/">
+								<a href="home.do">
 									<span class="menu-text">发现</span><i class="iconfont ic-navigation-discover menu-icon"></i>
 								</a>
 							</li>
 							<li class="tab ">
-								<a href="/subscriptions">
+								<a href="focus.do">
 									<span class="menu-text">关注</span><i class="iconfont ic-navigation-follow menu-icon"></i>
 								</a>
 							</li>
 							<li class="tab notification">
-								<a data-hover="dropdown" href="/notifications" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i>
+								<a data-hover="dropdown" href="msg.do" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i>
 									<!----><span class="badge">1</span></a>
 								<ul class="dropdown-menu">
 									<li>
@@ -944,12 +944,12 @@
 				<div class="col-xs-7 col-xs-offset-1 aside">
 					<div class="board">
 						<a target="_blank" href="/recommendations/notes?category_id=56&amp;utm_medium=index-banner-s&amp;utm_source=desktop">
-							<img src="//cdn2.jianshu.io/assets/web/banner-s-1-b8ff9ec59f72ea88ecc8c42956f41f78.png" alt="Banner s 1">
+							<img src="../img/banner01.png" alt="Banner s 1">
 						</a>
-						<a target="_blank" href="/trending/weekly?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="//cdn2.jianshu.io/assets/web/banner-s-3-7123fd94750759acf7eca05b871e9d17.png" alt="Banner s 3"></a>
-						<a target="_blank" href="/trending/monthly?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="//cdn2.jianshu.io/assets/web/banner-s-4-b70da70d679593510ac93a172dfbaeaa.png" alt="Banner s 4"></a>
-						<a utm_medium="index-banner-s" target="_blank" href="/publications"><img src="//cdn2.jianshu.io/assets/web/banner-s-5-291e00e9156f30791fe24e3de9c39171.png" alt="Banner s 5"></a>
-						<a target="_blank" href="/c/e048f1a72e3d?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="//cdn2.jianshu.io/assets/web/banner-s-6-c4d6335bfd688f2ca1115b42b04c28a7.png" alt="Banner s 6"></a>
+						<a target="_blank" href="/trending/weekly?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="../img/banner02.png" alt="Banner s 3"></a>
+						<a target="_blank" href="/trending/monthly?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="../img/banner03.png" alt="Banner s 4"></a>
+						<a utm_medium="index-banner-s" target="_blank" href="/publications"><img src="../img/banner04.png" alt="Banner s 5"></a>
+						<a target="_blank" href="/c/e048f1a72e3d?utm_medium=index-banner-s&amp;utm_source=desktop"><img src="../img/banner05.png" alt="Banner s 6"></a>
 					</div>
 
 					<!-- 首页右侧 App 下载提示 -->
