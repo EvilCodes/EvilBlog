@@ -88,9 +88,8 @@
  <script>
  
  $(document).ready(function(){
-	 var loginResult="${loginResult}";
-	 console.log("loginResult="+loginResult);
-	 if (null!=loginResult) {
+	 
+	 if ("${loginResult.resultDesc}"!="") {
 		 alert("${loginResult.resultDesc}");
 		
 	}

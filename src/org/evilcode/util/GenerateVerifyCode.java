@@ -2,8 +2,8 @@ package org.evilcode.util;
 
 import java.util.Random;
 /**
- * 用于生成六位随机验证码的工具类
  * @author BlackFox
+ * 用于生成六位随机验证码的工具类
  *
  */
 public class GenerateVerifyCode {

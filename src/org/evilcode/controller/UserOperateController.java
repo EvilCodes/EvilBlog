@@ -33,11 +33,6 @@ public class UserOperateController {
 
 	@RequestMapping("/users/sign_in")
 	public String jumpToHello(Model model) {
-		// User user = iUserInfoImpl.getUser(1);
-		// model.addAttribute("name", user.getUsername());
-		// model.addAttribute("pwd", user.getPwd());
-		// model.addAttribute("p honeNum", user.getPhoneNum());
-		// model.addAttribute("id", user.getId());
 		return "sign_in";
 	}
 

@@ -155,6 +155,7 @@
 						<ul class="nav navbar-nav">
 							<li class="tab ">
 								<a href="/">
+									
 									<span class="menu-text">发现</span><i class="iconfont ic-navigation-discover menu-icon"></i>
 								</a>
 							</li>
