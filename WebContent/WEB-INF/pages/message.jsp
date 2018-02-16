@@ -54,7 +54,7 @@
 <link rel="stylesheet" media="all"
 	href="../css/web-8e4fd86a49b411611e61.css" />
 <link rel="stylesheet" media="all"
-	href="css/entry-02758fb5ca6a7c57530e.css" />
+	href="../css/entry-02758fb5ca6a7c57530e.css" />
 
 <link
 	href="//cdn2.jianshu.io/assets/favicons/favicon-03411b154a430b85d807b4366489c21122fb983a38f3d7ca926f882e6367b13e.ico"
