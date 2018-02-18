@@ -186,17 +186,17 @@
 					<div class="collapse navbar-collapse" id="menu">
 						<ul class="nav navbar-nav">
 							<li class="tab active">
-								<a href="home.do">
+								<a href="../pages/home.do">
 									<span class="menu-text">发现</span><i class="iconfont ic-navigation-discover menu-icon"></i>
 								</a>
 							</li>
 							<li class="tab ">
-								<a href="focus.do">
+								<a href="../pages/focus.do">
 									<span class="menu-text">关注</span><i class="iconfont ic-navigation-follow menu-icon"></i>
 								</a>
 							</li>
 							<li class="tab notification">
-								<a data-hover="dropdown" href="msg.do" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i>
+								<a data-hover="dropdown" href="../pages/msg.do" class="notification-btn"><span class="menu-text">消息</span> <i class="iconfont ic-navigation-notification menu-icon"></i>
 									<!----><span class="badge">1</span></a>
 								<ul class="dropdown-menu">
 									<li>
@@ -262,32 +262,32 @@
 
 					<div class="recommend-collection">
 						<a class="collection" target="_blank" href="/c/b676c24f7d60?utm_medium=index-collections&amp;utm_source=desktop">
-							<img src="//upload.jianshu.io/collections/images/494271/51164a1egd7b1a4a7c491_690.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">人文社科</div>
+							<img src="/pic/${techData[0].id}.jpg" alt="64">
+							<div class="name">${techData[0].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/fcd7a62be697?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/95/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">故事</div>
+							<div class="name">${techData[1].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/8c92f845cd4d?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/283250/%E6%BC%AB%E7%94%BB%E4%B8%93%E9%A2%98.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">手绘</div>
+							<div class="name">${techData[2].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/5AUzod?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/13/%E5%95%8A.png?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">旅行·在路上</div>
+							<div class="name">${techData[3].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/yD9GAd?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/4/sy_20091020135145113016.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">读书</div>
+							<div class="name">${techData[4].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/1hjajt?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/21/20120316041115481.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">简书电影</div>
+							<div class="name">${techData[5].name}</div>
 						</a>
 						<a class="collection" target="_blank" href="/c/7b2be866f564?utm_medium=index-collections&amp;utm_source=desktop">
 							<img src="//upload.jianshu.io/collections/images/83/1.jpg?imageMogr2/auto-orient/strip|imageView2/1/w/64/h/64" alt="64">
-							<div class="name">摄影</div>
+							<div class="name">${techData[6].name}</div>
 						</a>
 						<a class="more-hot-collection" target="_blank" href="/recommendations/collections?utm_medium=index-collections&amp;utm_source=desktop">
 							更多热门专题 <i class="iconfont ic-link"></i>

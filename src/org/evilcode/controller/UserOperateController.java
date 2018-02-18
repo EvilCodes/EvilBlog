@@ -146,7 +146,8 @@ public class UserOperateController {
 				Result loginResult = iUserInfoImpl.isLoginSuccess(user);
 				int loginResultCode = loginResult.getResultCode();
 				if (loginResultCode==PublicMsgConstant.LOGIN_STATUS_SUCCESS) {
-					return "home";
+					modelMap.addAttribute("user", user);
+					return "redirect:/pages/home.do";
 					
 				}else {
 					System.out.println("loginResult="+loginResult.toString());

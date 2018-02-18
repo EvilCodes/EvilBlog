@@ -168,15 +168,15 @@
 			</div>
 			<div class="collapse navbar-collapse" id="menu">
 				<ul class="nav navbar-nav">
-					<li class="tab "><a href="home.do"> <span class="menu-text">发现</span><i
+					<li class="tab "><a href="../pages/home.do"> <span class="menu-text">发现</span><i
 							class="iconfont ic-navigation-discover menu-icon"></i>
 					</a></li>
-					<li class="tab "><a href="focus.do"> <span
+					<li class="tab "><a href="../pages/focus.do"> <span
 							class="menu-text">关注</span><i
 							class="iconfont ic-navigation-follow menu-icon"></i>
 					</a></li>
 					<li class="tab notification v-notification-dropdown-menu active">
-						<a class="notification-btn" href="msg.do"
+						<a class="notification-btn" href="../pages/msg.do"
 						data-hover="dropdown"> <span class="menu-text">消息</span> <i
 							class="iconfont ic-navigation-notification menu-icon"></i> <span
 							class="badge"></span>
